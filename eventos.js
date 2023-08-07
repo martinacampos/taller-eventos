@@ -5,3 +5,13 @@ function clickDiv() {
 const div = document.getElementById("div");
 
 div.addEventListener("click", clickDiv);
+
+function clickButton(event) {
+    alert('Hola!')
+    event.stopPropagation();
+
+}
+
+const button = document.getElementById("button");
+
+button.addEventListener("click", clickButton) ;
